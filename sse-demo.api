@@ -1,0 +1,32 @@
+syntax = "v1"
+
+info (
+	title:   "type title here"
+	desc:    "type desc here"
+	author:  "type author here"
+	email:   "type email here"
+	version: "type version here"
+)
+
+@server (
+	prefix:  test
+	group:   test
+	timeout: 10s
+)
+service sse-api {
+	@doc "Test"
+	@handler Test
+	get /test returns (string)
+
+}
+
+@server (
+	prefix:  test
+	group:   test
+	timeout: 5s
+)
+service sse-api {
+	@doc "Test2"
+	@handler Test2
+	get /test2 returns (string)
+}

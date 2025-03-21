@@ -1,0 +1,9 @@
+Name: sse-api
+Host: 0.0.0.0
+Port: 8888
+Verbose: true
+Mode: dev
+Log:
+  Encoding: plain
+  TimeFormat: 2006-01-02 15:04:05.000
+  Stat: false
